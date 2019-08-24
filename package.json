@@ -1,0 +1,24 @@
+{
+  "name": "node-blog-1",
+  "version": "1.0.0",
+  "description": "node blog server",
+  "main": "bin/www.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE-ENV=dev nodemon ./bin/www.js",
+    "prod": "cross-env NODE-ENV=production nodemon ./bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szjzszjz/node-blog-1.git"
+  },
+  "author": "szjz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szjzszjz/node-blog-1/issues"
+  },
+  "homepage": "https://github.com/szjzszjz/node-blog-1#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
