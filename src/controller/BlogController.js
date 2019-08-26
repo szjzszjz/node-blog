@@ -35,9 +35,10 @@ const newBlog = (blogData = {}) => {
     const author = blogData.author
     const title = blogData.title
     const content = blogData.content
+    const categories = blogData.categories
     const createTime = Date.now()
-    const sql = `insert into blog (title, content, author, createtime) 
-    values('${title}', '${content}', '${author}', '${createTime}');`
+    const sql = `insert into blog (title, content, author, createtime, categories) 
+    values('${title}', '${content}', '${author}', '${createTime}', '${categories}');`
 
     return exec(sql).then(insertData => {
         console.log('insertData is', insertData);
@@ -52,7 +53,8 @@ const updateBlog = (id, blogData = {}) => {
     const author = blogData.author
     const title = blogData.title
     const content = blogData.content
-    const sql = `update blog set author = '${author}', title = '${title}', content = '${content}' where id = '${id}';`
+    const categories = blogData.categories
+    const sql = `update blog set author = '${author}', title = '${title}', content = '${content}' , categories = '${categories}' where id = '${id}';`
 
     return exec(sql).then(updateData => {
         console.log('updateData is', updateData)
@@ -64,7 +66,7 @@ const updateBlog = (id, blogData = {}) => {
 }
 
 
-const deleteBlog = (id) => {
+const deleteBlog = (id, blogData) => {
     const sql = `delete from blog where id = '${id}'`
     return exec(sql).then(deleteData => {
         console.log('deleteData is', deleteData)

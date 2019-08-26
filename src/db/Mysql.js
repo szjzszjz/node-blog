@@ -1,16 +1,11 @@
 const mysql = require('mysql')
-const { MYSQL_CONFIG } = require('../config/Db')
+const { MYSQL_CONFIG, REDIS_CONFIG } = require('../config/db')
 
 // 创建连接对象
 // const con = mysql.createConnection(MYSQL_CONFIG)
+console.log('MYSQL_CONFIG--',MYSQL_CONFIG,REDIS_CONFIG)
 const con = mysql.createConnection(
-    {
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        port: 3306,
-        database: 'node-blog'
-    }
+    MYSQL_CONFIG
 )
 
 //开始连接
@@ -42,9 +37,9 @@ module.exports = {
 //   port     : 3306,
 //   database : 'node-blog'
 // });
- 
+
 // connection.connect();
- 
+
 // connection.query('SELECT * from blog;', function (error, results, fields) {
 //   if (error) throw error;
 //   console.log('The solution is: ', results);
