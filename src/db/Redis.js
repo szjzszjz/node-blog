@@ -1,4 +1,4 @@
-const { REDIS_CONFIG } = require('../config/db')
+const {REDIS_CONFIG} = require('../config/db')
 const redis = require('redis')
 
 const redisClient = redis.createClient(
@@ -17,25 +17,25 @@ function set(key, val) {
     redisClient.set(key, val, redis.print)
 }
 
-function get(key){
+function get(key) {
     const promise = new Promise((resolve, reject) => {
         redisClient.get(key, (err, val) => {
-            if(err) {
+            if (err) {
                 reject(err)
                 return
             }
-           if(val === null){
-               resolve(null)
-               return
-           }
+            if (val === null) {
+                resolve(null)
+                return
+            }
 
-           try {
-               // 如果是json格式的对象就转换为json
-               resolve(JSON.parse(val))
-           } catch (ex) {
-               // 否则按原型返回
-               resolve(val)
-           }
+            try {
+                // 如果是json格式的对象就转换为json
+                resolve(JSON.parse(val))
+            } catch (ex) {
+                // 否则按原型返回
+                resolve(val)
+            }
         })
     })
     return promise

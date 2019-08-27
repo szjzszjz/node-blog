@@ -26,19 +26,21 @@ const handleBlogRouter = (req, res) => {
 
   //获取博客列表
   if (method === "GET" && path === "/api/blog/list") {
+   
+
     let author = req.query.author || ''
     let keyword = req.query.keyword || ''
-    
+
     // 查看是否是管理員鄧麗
-    if (req.query.isadmin) {
-      const loginCheckResult = loginCheck(req)
-      if (loginCheckResult) {
-        // 登录失败
-        return loginCheckResult
-      }
+    // if (req.query.isadmin) {
+      // const loginCheckResult = loginCheck(req)
+      // if (loginCheckResult) {
+      //   // 登录失败
+      //   return loginCheckResult
+      // }
       //登录成功
-      author = req.session.username  
-    }
+    //   author = req.session.username
+    // }
     const promise = getList(author, keyword);
     return promise.then(listData => {
       return new SuccessModel(listData)

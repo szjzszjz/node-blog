@@ -44,8 +44,11 @@ http {
 ```
 ### 安装命令 
 ```text
+npm install nodemon --save
 npm install -g eslint
 npm i redis --save
 npm i mysql --save
 npm install --save-dev cross-env
+npm install http-server
+npm install node-uuid
 ```

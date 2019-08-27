@@ -1,4 +1,5 @@
 const { exec } = require('../db/Mysql')
+const xss = require('xss')
 
 const getList = (author, keyword) => {
     let sql = `select * from blog where 1=1 `
@@ -14,13 +15,6 @@ const getList = (author, keyword) => {
 }
 
 const getDetail = (id) => {
-    // return {
-    //     id: 01,
-    //     title: "标题1",
-    //     content: "内容1",
-    //     createTime: 1566640860249,
-    //     author: '张三'
-    // }
     let sql = `select * from blog `
     if (id) {
         sql += `where id = '${id}' `
@@ -33,8 +27,9 @@ const getDetail = (id) => {
 const newBlog = (blogData = {}) => {
     console.log('new blog', blogData)
     const author = blogData.author
-    const title = blogData.title
-    const content = blogData.content
+    // 预防xss攻击
+    const title = xss(blogData.title)
+    const content = xss(blogData.content)
     const categories = blogData.categories
     const createTime = Date.now()
     const sql = `insert into blog (title, content, author, createtime, categories) 

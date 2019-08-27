@@ -22,7 +22,11 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
+    "http-server": "^0.11.1",
     "mysql": "^2.17.1",
-    "redis": "^2.8.0"
+    "node-uuid": "^1.4.8",
+    "nodemon": "^1.19.1",
+    "redis": "^2.8.0",
+    "xss": "^1.0.6"
   }
 }
