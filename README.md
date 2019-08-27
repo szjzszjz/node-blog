@@ -51,4 +51,10 @@ npm i mysql --save
 npm install --save-dev cross-env
 npm install http-server
 npm install node-uuid
+
 ```
+
+# 项目第二阶段 node-blog-express  
+
+全局安装 `npm install express-generator -g`  
+生成express工程 `express node-blog-express`
