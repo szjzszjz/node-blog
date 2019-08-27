@@ -44,17 +44,26 @@ http {
 ```
 ### 安装命令 
 ```text
-npm install nodemon --save
 npm install -g eslint
 npm i redis --save
 npm i mysql --save
-npm install --save-dev cross-env
+npm install nodemon --save
+npm install cross-env --save-dev
 npm install http-server
 npm install node-uuid
 
 ```
 
-# 项目第二阶段 node-blog-express  
-
-全局安装 `npm install express-generator -g`  
-生成express工程 `express node-blog-express`
+## 项目第二阶段 node-blog-express  
+全局安装利用express-generator一件生成工程初始化架构  
+命令：`npm install express-generator -g`  
+创建express工程   
+命令：`express node-blog-express`  
+安装工程依赖  
+命令：`npm install`  
+启动工程  
+命令：`npm start`  
+安装自启动工具  
+命令：`
+npm install nodemon --save
+npm install cross-env --save-dev`
