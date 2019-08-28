@@ -1,6 +1,13 @@
 # nodejs-blog
 nodejs blog server
 
+### git拉取某个分支的内容：
+```text
+git fetch --all
+git reset --hard origin/master
+git pull
+```
+
 ### [vue-my-blog 前端工程地址](https://github.com/szjzszjz/vue-my-blog)
 ### [数据库表](https://github.com/szjzszjz/node-blog-1/blob/connect-mysql/static/node-blog.sql)
 
@@ -84,3 +91,15 @@ typings init
 //安装 node 插件
 typings install dt~node --global --save
 ```
+## 项目第三阶段 node-blog-koa2  
+全局安装koa
+命令：`npm install koa-generator -g`  
+初始化工程架构    
+命令：`koa2 projectName`  
+安装工程依赖  
+命令：`npm install`  
+安装自启动工具  
+命令：`
+npm install nodemon --save
+npm install cross-env --save-dev`  
+
