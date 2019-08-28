@@ -66,4 +66,21 @@ npm install node-uuid
 安装自启动工具  
 命令：`
 npm install nodemon --save
-npm install cross-env --save-dev`
+npm install cross-env --save-dev`  
+安装express-session  
+命令；`npm i express-session  --save`  
+安装Redis  
+命令：`npm i redis connect-redis --save`  
+
+### vscode nodejs智能提示typings安装
+逐一执行下面代码
+```text
+// 下载rypings包
+cnpm install -g typings
+//查看是否安装
+typings -v 
+// 进入项目文件下安装
+typings init
+//安装 node 插件
+typings install dt~node --global --save
+```
