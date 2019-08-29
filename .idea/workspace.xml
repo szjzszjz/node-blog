@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e79ec592-c2f7-40ff-852c-18786542de2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="40" column="16" selection-start-line="37" selection-start-column="14" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="485">
+              <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -105,8 +102,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="346" />
-    <option name="y" value="38" />
+    <option name="x" value="-62" />
+    <option name="y" value="22" />
     <option name="width" value="1535" />
     <option name="height" value="1026" />
   </component>
@@ -224,7 +221,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566984144490</updated>
       <workItem from="1566984148083" duration="2711000" />
-      <workItem from="1566988246498" duration="3430000" />
+      <workItem from="1566988246498" duration="3587000" />
     </task>
     <task id="LOCAL-00001" summary="1.利用express实登录，以及数据的crud--2.记录 日志">
       <created>1566984347135</created>
@@ -254,14 +251,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566990550915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test koa2">
+      <created>1566991702119</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566991702119</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6141000" />
+    <option name="totallyTimeSpent" value="6298000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="346" y="38" width="1535" height="1026" extended-state="0" />
+    <frame x="-62" y="22" width="1535" height="1026" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19322033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -272,7 +276,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2600897" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2600897" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +332,8 @@
     <MESSAGE value="1.利用express实登录，以及数据的crud--2.记录 日志" />
     <MESSAGE value="koa2 start" />
     <MESSAGE value="init koa2 project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init koa2 project" />
+    <MESSAGE value="test koa2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test koa2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/logs/access.log" />
@@ -389,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="40" column="16" selection-start-line="37" selection-start-column="14" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="485">
+          <caret line="37" column="47" lean-forward="true" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
         </state>
       </provider>
     </entry>

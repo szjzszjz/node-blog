@@ -63,43 +63,43 @@ npm install node-uuid
 
 ## 项目第二阶段 node-blog-express  
 全局安装利用express-generator一件生成工程初始化架构  
-命令：`npm install express-generator -g`  
+`npm install express-generator -g`  
 创建express工程   
-命令：`express node-blog-express`  
+`express node-blog-express`  
 安装工程依赖  
-命令：`npm install`  
+`npm install`  
 启动工程  
-命令：`npm start`  
+`npm start`  
 安装自启动工具  
-命令：`
-npm install nodemon --save
-npm install cross-env --save-dev`  
+`npm install nodemon --save`
+`npm install cross-env --save-dev`  
 安装express-session  
-命令；`npm i express-session  --save`  
+`npm i express-session  --save`  
 安装Redis  
-命令：`npm i redis connect-redis --save`  
+`npm i redis connect-redis --save`  
 
 ### vscode nodejs智能提示typings安装
-逐一执行下面代码
-```text
-// 下载rypings包
-cnpm install -g typings
-//查看是否安装
-typings -v 
-// 进入项目文件下安装
-typings init
-//安装 node 插件
-typings install dt~node --global --save
-```
+逐一执行下面代码  
+下载rypings包  
+`cnpm install -g typings`  
+查看是否安装  
+`typings -v `  
+进入项目文件下安装  
+`typings init`  
+安装 node 插件  
+`typings install dt~node --global --save`  
+
 ## 项目第三阶段 node-blog-koa2  
 全局安装koa
-命令：`npm install koa-generator -g`  
+`npm install koa-generator -g`  
 初始化工程架构    
-命令：`koa2 projectName`  
+`koa2 projectName`  
 安装工程依赖  
-命令：`npm install`  
+`npm install`  
 安装自启动工具  
-命令：`
-npm install nodemon --save
-npm install cross-env --save-dev`  
-
+`npm install nodemon --save`
+`npm install cross-env --save-dev`  
+安装koa-generic-session koa-redis redis  
+`npm i koa-generic-session koa-redis redis --save`  
+安装MySQL，xss  
+`npm i mysql xss --save`

@@ -6,8 +6,11 @@ const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
 
-const index = require('./routes/index')
-const users = require('./routes/users')
+const session = require('koa-generic-session')
+const redisStore = require('koa-redis')
+
+const { REDIS_CONFIG } = require('./config/db')
+
 const blog = require('./routes/blog')
 const user = require('./routes/user')
 
@@ -34,9 +37,21 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
+app.keys = ['*node-blog*']
+app.use(session({
+    // 配置cookie
+    cookie: {
+        path: '/',
+        httpOnly: true,
+        maxAge: 1000 * 60 * 10
+    },
+    //配置redis
+    store: redisStore({
+        all: `${REDIS_CONFIG.host}:${REDIS_CONFIG.port}`
+    })
+}))
+
 // routes
-app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
 app.use(blog.routes(), blog.allowedMethods())
 app.use(user.routes(), user.allowedMethods())
 
