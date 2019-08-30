@@ -15,6 +15,8 @@ router.get('/list', loginCheck, async (ctx, next) => {
     let keyword = ctx.query.keyword || ''
     author = ctx.session.username
     const listData = await getList(author, keyword);
+    console.log('listData=', listData);
+    
     ctx.body = new SuccessModel(listData)
 
 
