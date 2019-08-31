@@ -18,7 +18,7 @@ const login = async (username, password) => {
 
     const result = await exec(sql)
     console.log('sql=', sql, result);
-    return result[0] || {}
+    return result
 
     // promise 语法 异步函数
     // return exec(sql).then((result) => {

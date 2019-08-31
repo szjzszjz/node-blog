@@ -13,6 +13,8 @@ const getList = async (author, keyword) => {
     }
     sql += `order by createtime desc;`
 
+    console.log('get list sql=', sql);
+    
     // 通过await 获取promise里面的resolve 直接返回 
     return await exec(sql)
 }
@@ -38,7 +40,7 @@ const newBlog =async  (blogData = {}) => {
     const sql = `insert into blog (title, content, author, createtime, categories) 
     values('${title}', '${content}', '${author}', '${createTime}', '${categories}');`
 
-    const insertDate = await exec(sql)
+    const insertData = await exec(sql)
     return {
         id: insertData.insertId
     }

@@ -104,4 +104,9 @@ npm install node-uuid
 安装MySQL，xss  
 `npm i mysql xss --save`  
 安装日志插件  
-`npm i koa-morgan --save`
+`npm i koa-morgan --save`  
+
+## 项目第四阶段  
+安装PM2  
+`npm install pm2 -g`
+

@@ -3,14 +3,12 @@ const { ErrorModel } = require('../model/resModel')
 
 // koa2 语法
 module.exports = async (ctx, next) => {
-    console.log('logigncheck');
-    
     if (ctx.session.username !== undefined) {
-        console.log('logigncheck1');
+        console.log('验证通过');
         await next()
         return
     }
-    console.log('logigncheck2');
+    console.log('验证未通过');
     ctx.body = new ErrorModel('未登录')
 }
 

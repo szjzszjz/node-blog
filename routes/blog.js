@@ -11,14 +11,12 @@ const loginCheck = require('../middleware/loginCheck')
 
 router.prefix('/api/blog')
 
-router.get('/list', loginCheck, async (ctx, next) => {
+router.get('/list', loginCheck , async (ctx, next) => {
     let keyword = ctx.query.keyword || ''
     author = ctx.session.username
     const listData = await getList(author, keyword);
     console.log('listData=', listData);
-    
     ctx.body = new SuccessModel(listData)
-
 
     // let keyword = req.query.keyword || ''
     // author = req.session.username
