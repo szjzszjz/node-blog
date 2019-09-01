@@ -1,1 +1,4 @@
 node_modules
+logs-pm2
+logs/access.log
+.idea
