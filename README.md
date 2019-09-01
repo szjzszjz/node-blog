@@ -8,7 +8,7 @@ git reset --hard origin/master
 git pull
 ```
 
-### [vue-my-blog 前端工程地址](https://github.com/szjzszjz/vue-my-blog)
+### [vue-my-blog 前端工程地址（connect-mysql分支）](https://github.com/szjzszjz/vue-my-blog/tree/connect-mysql)
 ### [数据库表](https://github.com/szjzszjz/node-blog-1/blob/connect-mysql/static/node-blog.sql)
 
 ### [windows安装redis](http://note.youdao.com/noteshare?id=decd9cc0d507394d4d74808815003005&sub=65FFE0136F2849E8ADEF67094FA7CDFF)
